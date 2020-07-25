@@ -1,0 +1,67 @@
+<html>
+    <title>
+        Student Registration form   
+    </title>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"><!-- using external css stylesheet-->
+    </head>
+    <body>
+        <script type="text/javascript" src="validate.js"></script><!--using external javascript-->
+        
+        <div class="div1">
+            <img src="book.jpg" alt ="book" width="100" height="735"></image><!--placing image-->
+        </div>
+        <div class="div2">
+        <h1>REGISTRATION INFO</h1>
+        <!--using a table to structure the form-->
+        <form>
+            <table>
+                <tr><!--creating a text field First name with validation on blurring-->
+                    <td>First Name</td>
+                    <td><input type="textfield" id = "firstName" name="firstName" onblur="validateFirstName();" required></td>
+                    <td><span id="first_name_prompt">&nbsp;</span></td>
+                </tr>
+                <tr><!--creating a text field Last name with validation on blurring-->
+                    <td>Last Name</td>
+                    <td><input type="textfield" id="lastName" name="lastName" onblur="validateLastName();" required></td>
+                    <td><span id="last_name_prompt">&nbsp;</span></td>
+                </tr>
+                <tr><!--creating a text field Email ID with validation on blurring-->
+                    <td>Email ID</td>
+                    <td><input type="textfield" id="email" name="email" onblur="validateEmail();" required></td>
+                    <td><span id="email_prompt"></span></td>
+                </tr>
+                <tr><!--creating a password field Password with validation on blurring-->
+                    <td>Password</td>
+                    <td><input type="password" id="password" name="password"onblur="validatePassword();" required></td>
+                    <td><span id="password_prompt">&nbsp;</span></td>
+                </tr>
+                <tr><!--creating a date field Date of birth -->
+                    <td>Date of birth</td>
+                    <td><input type="date" name="dateOfBirth" required></td>
+                </tr>
+                <tr><!--creating a radio button for gender which has female, male and transgender as buttons-->
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender"> Female</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="gender"> Male</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="gender"> Transgender</td>
+                </tr>
+                <tr><!-- creatind a text field for phone number with placeholder which specifies the format for phone number-->
+                    <td>Phone Number </td>
+                    <td><input type="textfield" id="phoneNumber" name="phoneNumber" placeholder="1234567890" required></td>
+                    <td><span id="phone_number_prompt">&nbsp;</span></td>
+                </tr>
+            </table>
+        </form>
+        <div class=btn><!--creating a button to register using only css-->
+        <button class="registerbtn">Register</button>
+        </div>
+        </div>
+    </body>
+</html>

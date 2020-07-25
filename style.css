@@ -1,0 +1,55 @@
+form{
+    width: "50%";
+    margin-left: 10%;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    font: outline;
+    font-family:"Poppins", "Arial", "Helvetica Neue", sans-serif;
+    color: white;
+}
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+.btn{
+    text-align: center;
+    
+}
+td{
+    font-size: 18px;;
+    color: white;
+}
+
+.div1 img {
+    width: 60%;
+    float:left;
+    position: relative;
+} 
+.div2 {
+    float: right;
+    width: 40%;
+    height: auto;
+}
+input[type=textfield], input[type=password],input[type=date],input[type=number],input[type=tel] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 6px;
+  }
